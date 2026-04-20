@@ -12,7 +12,7 @@
 - GPU passthrough worked first try (nvidia-smi, PyTorch verify, matmul on cuda:0)
 - Claude Code authenticated cleanly via OAuth
 
-## What got stuck on
+## What I got stuck on
 - Ran install command for uv on PowerShell instead of Ubuntu initially
 - wandb entity mismatch (logged in as sidantdev but real entity is sidantdev-code)
 - npm install -g failed with EACCES; fixed by setting npm prefix to ~/.npm-global
