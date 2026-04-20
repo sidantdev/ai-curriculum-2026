@@ -1,0 +1,35 @@
+{
+  "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "CPython 3.12.3",
+  "startedAt": "2026-04-20T18:15:23.978573Z",
+  "program": "/home/sid/ai-curriculum/phase0-foundations/wandb_hello.py",
+  "codePath": "wandb_hello.py",
+  "codePathLocal": "wandb_hello.py",
+  "email": "sidantdev@gmail.com",
+  "root": "/home/sid/ai-curriculum/phase0-foundations",
+  "host": "sdev",
+  "executable": "/home/sid/ai-curriculum/phase0-foundations/.venv/bin/python3",
+  "cpu_count": 12,
+  "cpu_count_logical": 24,
+  "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "1081101176832",
+      "used": "8507977728"
+    }
+  },
+  "memory": {
+    "total": "16215339008"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4070 Ti SUPER",
+      "memoryTotal": "17171480576",
+      "architecture": "Ada",
+      "uuid": "GPU-9d4c47a3-b26d-e852-fa08-cf6e04fc8490"
+    }
+  ],
+  "cudaVersion": "13.1",
+  "writerId": "entiogkajf3cxwmt0bjqit0ea4gn47eo"
+}

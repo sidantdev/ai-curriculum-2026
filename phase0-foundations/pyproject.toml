@@ -1,0 +1,22 @@
+[project]
+name = "phase0-foundations"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.13.0",
+    "datasets>=2.14.4",
+    "fastai>=2.8.7",
+    "ipykernel>=7.2.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.8",
+    "torch>=2.6.0",
+    "torchaudio>=2.6.0",
+    "torchvision>=0.21.0",
+    "transformers>=4.57.6",
+    "wandb>=0.26.0",
+]
+
+[[tool.uv.index]]
+url = "https://download.pytorch.org/whl/cu124"

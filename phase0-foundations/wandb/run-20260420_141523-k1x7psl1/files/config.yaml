@@ -1,0 +1,49 @@
+_wandb:
+    value:
+        cli_version: 0.26.0
+        e:
+            entiogkajf3cxwmt0bjqit0ea4gn47eo:
+                codePath: wandb_hello.py
+                codePathLocal: wandb_hello.py
+                cpu_count: 12
+                cpu_count_logical: 24
+                cudaVersion: "13.1"
+                disk:
+                    /:
+                        total: "1081101176832"
+                        used: "8507977728"
+                email: sidantdev@gmail.com
+                executable: /home/sid/ai-curriculum/phase0-foundations/.venv/bin/python3
+                gpu: NVIDIA GeForce RTX 4070 Ti SUPER
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ada
+                      memoryTotal: "17171480576"
+                      name: NVIDIA GeForce RTX 4070 Ti SUPER
+                      uuid: GPU-9d4c47a3-b26d-e852-fa08-cf6e04fc8490
+                host: sdev
+                memory:
+                    total: "16215339008"
+                os: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+                program: /home/sid/ai-curriculum/phase0-foundations/wandb_hello.py
+                python: CPython 3.12.3
+                root: /home/sid/ai-curriculum/phase0-foundations
+                startedAt: "2026-04-20T18:15:23.978573Z"
+                writerId: entiogkajf3cxwmt0bjqit0ea4gn47eo
+        m: []
+        python_version: 3.12.3
+        t:
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.12.3
+            "5": 0.26.0
+            "12": 0.26.0
+            "13": linux-x86_64
+epochs:
+    value: 10
+learning_rate:
+    value: 0.01
+notes:
+    value: First wandb run in the 24-week curriculum
