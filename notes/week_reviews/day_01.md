@@ -1,29 +1,49 @@
-# Day 1 — Tuesday, April 21, 2026
+# Setup day
 
-## Hours logged
-- Block 1 (Python env + WSL2 detour): ~2 hrs
-- Block 2 (wandb): ~1 hr
-- Block 3 (Claude Code): ~1 hr
-- Block 4 (GitHub): ~1 hr
-- Total: ~5 hrs
+## What got done
 
-## What worked
-- WSL2 setup was smoother than expected once the Windows install completed
-- GPU passthrough worked first try (nvidia-smi, PyTorch verify, matmul on cuda:0)
-- Claude Code authenticated cleanly via OAuth
+- WSL2 with Ubuntu 24.04 installed and verified
+- GPU passthrough working (nvidia-smi shows RTX 4070 Ti SUPER, 17.2 GB VRAM)
+- uv installed, Phase 0 workspace created
+- PyTorch 2.6 + CUDA 12.4 verified, GPU matmul tested from Python
+- wandb configured (entity: sidantdev-code), first run logged
+- npm global install path moved to ~/.npm-global to avoid sudo
+- Claude Code installed and authenticated via OAuth
+- SSH key generated, added to GitHub
+- Git configured (user.name, user.email)
+- Repo initialized, .gitignore created, README written
+- First two commits pushed to github.com/sidantdev/ai-curriculum-2026
 
-## What I got stuck on
-- Ran install command for uv on PowerShell instead of Ubuntu initially
-- wandb entity mismatch (logged in as sidantdev but real entity is sidantdev-code)
-- npm install -g failed with EACCES; fixed by setting npm prefix to ~/.npm-global
-- ssh-keygen pasted the literal placeholder email; fixed with ssh-keygen -c
+## What got stuck on
 
-## Unresolved questions
-- wandb free tier storage (5 GB) — revisit when Phase 1 fine-tuning starts
-- Whether to clean up the wandb "sidantdev-code" auto-org into something nicer
+- Ran uv install command in PowerShell initially (needed to be in Ubuntu)
+- wandb entity mismatch — sidantdev display name vs sidantdev-code actual entity
+- npm install -g failed with EACCES; fixed via ~/.npm-global
+- ssh-keygen placeholder email pasted literally; fixed with `ssh-keygen -c`
+- Paste friction into terminal for multi-line content (resolved by moving to VS Code)
 
-## Tomorrow (Day 2)
-- Fast.ai Lesson 1 (fully) + skim Lessons 2-4
-- Jeremy Howard's "A hackers guide to language models" talk
-- First paper read: Attention Is All You Need (Section 3 focus)
-- 100-word paper summary in notes/papers/
+## Next
+
+- Karpathy Zero to Hero, Video 1 (micrograd from scratch)
+- Implement micrograd from memory in a second notebook
+- First-pass skim of DeepSeek V3 Technical Report
+- Paper summary in notes/papers/
+
+## Curriculum notes
+
+Curriculum pivoted from alignment-track 24-week plan (original target: MATS
+Autumn 2026) to capabilities-first, full-depth, no-timeline list. Knowledge
+target: Master's-equivalent on focus areas, frontier depth beyond. MATS
+optional. Timeline removed in favor of phase-based structured list.
+
+Phase structure:
+- Phase 0 Foundations
+- Phase 1 Transformer Internals + Kernels
+- Phase 3 Alignment Foundation
+- Phase 4 Large Agentic Systems (deepest)
+- Phase 5 Computer-Use Agents
+- Phase 6 Embodied Robotics
+- Phase 7 Scaling & Super-intelligence
+- Phase 8 Portfolio & Recruiting
+
+See README.md for phase detail and deliverables.

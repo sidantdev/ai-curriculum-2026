@@ -1,52 +1,73 @@
-# AI Curriculum 2026
+# AI Curriculum
 
-A 24-week modern AI research engineering curriculum, studied in public.
-
-Started: April 21, 2026
-Target completion: October 5, 2026
+A capabilities-first AI research engineering curriculum.
 
 ## Background
 
 CS/DS from Virginia Tech. Prior NLP/ML research at VT Hume Center (IC CAE Scholar).
 Built sidant.dev and ResumeForge. Currently job-seeking with a focus on AI research
-engineering, alignment, and interpretability.
+engineering and founder/builder opportunities at the frontier of AGI/ASI work.
 
-## Trajectory
+## End goals
 
-Near-term target: MATS Autumn 2026 application (~Week 12 checkpoint).
-Longer-term: research engineering roles at frontier labs working on alignment,
-interpretability, and frontier model research.
+Knowledge target: Frontier depth on agentic systems,
+computer-use, embodied robotics, and scaling.
+
+Priority focus areas, ranked:
+1. Large agentic systems (scaffolding, planning, multi-agent, orchestration)
+2. Computer-use agents (browser/OS automation, GUI grounding)
+3. Embodied robotics (VLAs, sim-to-real, humanoid policies)
+4. Scaling / super-intelligence (pre-training, post-training, test-time compute)
 
 ## Phases
 
-- [ ] **Phase 0: Foundations & Velocity** (Weeks 1-3) — Fast.ai, C++ basics, env setup
-- [ ] **Phase 1: PyTorch & Transformer Internals** (Weeks 4-7) — Karpathy Zero-to-Hero, nanochat, LoRA
-- [ ] **Phase 2: GPU Programming & Kernel Thinking** (Weeks 6-11, overlapping) — PMPP, GPU MODE, Triton
-- [ ] **Phase 3: ARENA Curriculum** (Weeks 12-17) — Mech interp, RLHF, evals
-- [ ] **Phase 4: Agents, Evals, Frontier Practice** (Weeks 16-19, overlapping) — Agent scaffolding, Inspect, METR
-- [ ] **Phase 5: Robotics & Embodied AI** (Weeks 18-24) — ETH ROS2, LeRobot, Isaac Lab
+- [ ] **Phase 0: Foundations & Positioning** — Karpathy Zero to Hero, Raschka LLM book, 2026 builder toolchain
+- [ ] **Phase 1: Transformer Internals + Kernels** — Distributed training, FlashAttention, nanochat speedrun, vLLM/SGLang
+- [ ] **Phase 3: Alignment Foundation** — Full ARENA chapters, Inspect AI evals, red-line essay
+- [ ] **Phase 4: Large Agentic Systems (deepest)** — Anthropic patterns, LangGraph/OpenAI Agents SDK/Claude Agent SDK, RLVR, agent portfolio sprint
+- [ ] **Phase 5: Computer-Use Agents** — UI-TARS-2, OSWorld, Stagehand/Browser Use, prompt-injection defense
+- [ ] **Phase 6: Embodied Robotics** — LeRobot, SO-ARM101, SmolVLA, π0.5, Isaac Lab, humanoid RL reading
+- [ ] **Phase 7: Scaling & Superintelligence Study** — CS336, DeepSeek V3/R1, RLHF Book, scaling capstone
+- [ ] **Phase 8: Portfolio & Recruiting** — Artifact polish, OSS PRs, frontier lab applications, founder-track motion
+
+## Portfolio targets
+
+Four shipped artifacts, three merged OSS PRs, one published MCP server, two
+long-form essays (red-line + founder thesis).
+
+1. nanochat + architectural variant (MLA, MTP, or MoE)
+2. Agent scaffold / eval / RL recipe
+3. Computer-use agent OR prompt-injection red team OR domain-specific computer-use product
+4. SO-ARM101 + SmolVLA or π0.5 fine-tune
 
 ## Environment
 
 - Ubuntu 24.04 (WSL2) on Windows
 - NVIDIA RTX 4070 Ti SUPER (16GB, CUDA 12.4)
-- Python via \`uv\` (not pip/conda)
-- Experiment tracking: wandb
+- Python via `uv` (not pip/conda)
+- Experiment tracking: wandb (entity `sidantdev-code`)
 - Editor: VS Code with WSL remote + Claude Code
 
-## Week 1 Progress (Apr 21 – Apr 27, 2026)
+## Phase 0 — Week 1 task list
 
-- [x] Day 1: Environment setup (WSL2, uv, PyTorch, wandb, Claude Code, git/GitHub)
-- [ ] Day 2: Fast.ai Lesson 1 + course orientation
-- [ ] Day 3: Fast.ai Lesson 5 + Stroustrup C++ Ch. 1-2
-- [ ] Day 4: Fast.ai Lesson 6 + Stroustrup Ch. 3-4
-- [ ] Day 5: Phase 0 project decision + Fast.ai Lesson 7
-- [ ] Day 6: Phase 0 project v1 build
-- [ ] Day 7: Consolidation & review
+- [x] Environment setup (WSL2, uv, PyTorch, wandb, Claude Code, git/GitHub)
+- [ ] Karpathy Video 1 (micrograd from scratch), DeepSeek V3 first-pass read
+- [ ] Karpathy Video 2 (makemore bigram), Raschka Ch. 1-2
+- [ ] Karpathy Video 3 (makemore MLP), Raschka Ch. 3
+- [ ] Karpathy Video 4 (BatchNorm, activations)
+- [ ] Karpathy Videos 5-6 (backprop ninja, WaveNet)
+- [ ] Karpathy Video 7 (build GPT from scratch)
+
+## Phase 0 deliverables
+
+- Own 124M-param nanoGPT trained on TinyShakespeare + FineWeb-Edu sample, W&B report, blog post
+- GQA or MLA attention variant implemented in your nanoGPT
+- Modern LLM toolkit comparison post (Modal vs Replicate vs Together vs Baseten)
 
 ## Notes
 
-See [notes/](notes/) for paper summaries, C++ reading notes, and weekly reviews.
+See [notes/](notes/) for paper summaries, reading notes, phase reviews, and
+the two long-form essays (Phase 3 red-line, Phase 7 founder thesis).
 
 ## License
 
